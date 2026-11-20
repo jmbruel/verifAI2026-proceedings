@@ -1,0 +1,10 @@
+# papers/ drop zone
+#
+# Drop camera-ready submissions here using the naming convention:
+#   <submissionID>-<surname>.pdf          (camera-ready PDF)
+#   <submissionID>-<surname>-source/      (source directory: .tex, .bib, .bbl, images, or .docx)
+#
+# Git tracking notes:
+#   IGNORED  : *.pdf, *.png, *.jpg, *.eps, *.zip  (see root .gitignore)
+#              Add binary files explicitly with `git add -f <file>` only if you need to version them.
+#   TRACKED  : *.tex, *.bib, *.bbl, *.docx        (Springer requires source files; commit these normally)

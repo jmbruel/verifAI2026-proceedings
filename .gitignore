@@ -1,0 +1,15 @@
+.kiro
+
+# Camera-ready PDFs and images in papers/ -- add explicitly with `git add -f` if tracking is needed
+papers/*.pdf
+papers/*.png
+papers/*.jpg
+papers/*.eps
+papers/*.zip
+
+# macOS metadata
+.DS_Store
+
+# Editor swap files
+*.swp
+*~
