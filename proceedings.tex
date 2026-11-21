@@ -1,0 +1,153 @@
+% proceedings.tex
+%
+% Master LaTeX file for the VERIF-AI 2026 LNCS proceedings.
+% (Workshop: VERIF-AI 2026, Villebrumier, France, 8-11 March 2026)
+%
+% -----------------------------------------------------------------------
+% HOW TO USE THIS FILE
+%
+%   1. As camera-ready source files arrive for each paper, uncomment the
+%      corresponding \input line below.
+%
+%   2. Folders are initially named papers/p<submission-id>/ (e.g., papers/p1992/).
+%      Once the Springer volume number is known, rename each folder to the
+%      convention <volume-number><4-digit-starting-page> (e.g., papers/164560001/)
+%      and update the \input path accordingly.
+%
+%   3. Compile from the workspace root:
+%
+%        make proceedings
+%
+%      or manually:
+%
+%        pdflatex proceedings.tex
+%        pdflatex proceedings.tex   % second pass for TOC/refs/running heads
+%
+%   4. llncs.cls is at the workspace root; pdflatex finds it automatically
+%      when run from that directory.
+%
+%   5. Set topical Part Titles once section groupings are decided (see
+%      submission/toc.csv "Part Titles" column); replace the PLACEHOLDER
+%      text in each \part{} command below.
+% -----------------------------------------------------------------------
+
+\documentclass[runningheads]{llncs}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+% -----------------------------------------------------------------------
+% Front matter: preface and organization pages
+% -----------------------------------------------------------------------
+\begin{document}
+
+\frontmatter
+
+\input{front-matter/preface}
+
+\clearpage
+
+\input{front-matter/organization-pages}
+
+\clearpage
+
+\tableofcontents
+
+% -----------------------------------------------------------------------
+% Main matter: accepted papers
+% -----------------------------------------------------------------------
+\mainmatter
+
+% -----------------------------------------------------------------------
+% TOPICAL SECTIONS (Part Titles)
+% Replace each PLACEHOLDER with the agreed topical section heading.
+% Reorder \part{} markers and \input lines to match the final groupings
+% recorded in submission/toc.csv.
+% -----------------------------------------------------------------------
+
+\part{[PLACEHOLDER -- Topical Section Title 1]}
+
+% Paper 1 (sub 1992): From Verification to Herding: Exploiting Software's Sparsity of Influence
+% \input{papers/p1992/main}
+
+% Paper 2 (sub 3744): Abductive Vibe Coding (Extended Abstract)
+% \input{papers/p3744/main}
+
+% Paper 3 (sub 7252): Do AI models help produce verified bug fixes?
+% \input{papers/p7252/main}
+
+% Paper 4 (sub 1613): Modeling and Analysis of Non-Deterministic Executions of LLM-Based Agents via Finite Automata
+% \input{papers/p1613/main}
+
+% Paper 5 (sub 3719): Formalizing and validating properties in Asmeta with Large Language Models
+% \input{papers/p3719/main}
+
+% Paper 6 (sub 4854): Automatic Generation of Executable Script from MBT Scenario
+% \input{papers/p4854/main}
+
+\part{[PLACEHOLDER -- Topical Section Title 2]}
+
+% Paper 7 (sub 5373): Large Language Models and Language Server Protocol: a match made in context
+% \input{papers/p5373/main}
+
+% Paper 8 (sub 5640): Neuroforger: certified violation witnesses for smart contracts verification via LLMs
+% \input{papers/p5640/main}
+
+% Paper 9 (sub 9569): Diversifying to Verify: When Task-Equivalent Programs Differ in Verifiability
+% \input{papers/p9569/main}
+
+% Paper 10 (sub 4668): Trustworthy Machine Learning Across the Lifecycle: A Synthesis of Current Methods
+% \input{papers/p4668/main}
+
+% Paper 11 (sub 5808): An Empirical Study on Generating Proven-to-be-Correct Dafny Programs
+% \input{papers/p5808/main}
+
+% Paper 12 (sub 6356): Requirement-Based Testing: Enhancing Reinforcement Learning with Game Theory
+% \input{papers/p6356/main}
+
+% Paper 13 (sub 8595): Adaptive Random Testing of Online Machine Learning Programs: Application to Opportunistic Software Composition
+% \input{papers/p8595/main}
+
+\part{[PLACEHOLDER -- Topical Section Title 3]}
+
+% Paper 14 (sub 4215): SecretFan: Synthesizing Realistic Data without Breaking Privacy
+% \input{papers/p4215/main}
+
+% Paper 15 (sub 6194): AI-augmented MBSE: from vibe-modeling to assisted verification and validation
+% \input{papers/p6194/main}
+
+% Paper 16 (sub 7035): Improving Verified Constraint Satisfaction in Differentiable Logics
+% \input{papers/p7035/main}
+
+% Paper 17 (sub 6470): Probabilistic Behavior Synthesis with Language Models for Autonomous Vehicle Testing
+% \input{papers/p6470/main}
+
+% Paper 18 (sub 8405): Validating Multi-Model AI-Generated Acceptance Criteria in Requirements Engineering
+% \input{papers/p8405/main}
+
+% Paper 19 (sub 9130): Co-Evolutionary Challenges: When Software Engineering Meets Artificial Intelligence
+% \input{papers/p9130/main}
+
+\part{[PLACEHOLDER -- Topical Section Title 4]}
+
+% Paper 20 (sub 9536): ReqFusion: A Multi-Provider Framework for Automated PEGS Analysis Across Software Domains
+% \input{papers/p9536/main}
+
+% Paper 21 (sub 6273): Towards an Evaluation of LLM's Prior Knowledge for Test Case Generation
+% \input{papers/p6273/main}
+
+% Paper 22 (sub 2745): A Typed Intermediate Representation for Neurosymbolic Formalization and Verification of Stock Index Methodologies
+% \input{papers/p2745/main}
+
+% Paper 23 (sub 3747): Automated evaluation of test requirements generation with LLMs
+% \input{papers/p3747/main}
+
+% Paper 24 (sub 5626): Learning-Infused Formal Reasoning: From Contract Synthesis to Artifact Reuse and Formal Semantics
+% \input{papers/p5626/main}
+
+% Paper 25 (sub 7106): VERIFAI Energy Management Systems
+% \input{papers/p7106/main}
+
+\end{document}

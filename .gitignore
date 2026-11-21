@@ -13,3 +13,11 @@ papers/*.zip
 # Editor swap files
 *.swp
 *~
+
+# LaTeX build artefacts (root and front-matter/)
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+proceedings.pdf
