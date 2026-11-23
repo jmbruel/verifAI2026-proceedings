@@ -6,14 +6,17 @@ This document defines the five compliance rules (CR-1 through CR-5) applied to e
 
 ## CR-1 — Page Count
 
-**Rule:** The camera-ready paper must be at or below **16 pages** (soft limit), including all content (body, references, appendices, Disclosure of Interests section, and any acknowledgements).
+**Rule:** The camera-ready paper must meet Springer LNCS minimum length requirements (CS Editors Proceedings Guidelines, Sect. 3.4) and stay at or below the **20-page** soft limit, including all content (body, references, appendices, Disclosure of Interests section, and any acknowledgements).
 
 **Applying CR-1:**
 
 | Page count | Action |
 |------------|--------|
-| ≤ 16 pages | CR-1 passes. |
-| 17–~18 pages | Flag the paper. Contact the authors and request a reduction. Do not automatically reject; use editorial judgement. CR-1 remains `Pending` until resolved. |
+| < 4 pages | **CR-1 fails.** Springer moves papers shorter than 4 pages to the back matter and does **not** index them on Springer Nature Link. Contact the authors to expand to ≥ 4 pages (especially verify Paper #2, Sub. ID `3744`, Extended Abstract). |
+| 4–5 pages | Only acceptable for poster/extended-abstract formats after confirming with Springer (Sect. 3.4). |
+| 6–11 pages | Acceptable for short papers (≥ 6 pages). Note: across the volume, **at least two thirds of published papers must be full papers (≥ 12 pages)**. |
+| 12–20 pages | Full paper — CR-1 passes. |
+| 21–~22 pages | Flag the paper. Contact the authors and request a reduction. Do not automatically reject; use editorial judgement. CR-1 remains `Pending` until resolved. |
 | ≥ 30 pages | Do not accept without first contacting **anna.kramer@springer.com**. Springer must approve any paper at or above 30 pages before it can be included in the volume. |
 
 ---
@@ -42,8 +45,11 @@ This document defines the five compliance rules (CR-1 through CR-5) applied to e
 1. Open the camera-ready PDF and read the author list from the paper header.
 2. Compare against the Authors column in `paper-tracking.md` for the same paper row.
 3. Any discrepancy (added, removed, reordered, or differently spelled name) requires author confirmation in writing before the entry can be corrected and CR-3 cleared.
+4. For authors contributing to more than one paper, confirm their name is spelled and structured identically across all papers and `submission/toc.csv` (Springer Guidelines Sect. 5.3).
+5. Flag any non-straightforward, multi-part, or possibly reversed author names (e.g., verify `Lefevre Louis` in Paper #6, Sub. ID `4854`) for the Author Index disambiguation list (`Given Name; Family Name`) sent to Springer.
+6. Confirm compliance with Springer's policy (Sect. 3) that no PC Chair, PC member, or volume editor co-authors more than **2 papers** in the volume.
 
-> **Note:** Do not silently update the Tracking Table to match the paper. Discrepancies may indicate a co-author was removed or added after acceptance, which must be cleared with the program chairs.
+> **Note:** Do not silently update the Tracking Table to match the paper. Discrepancies may indicate a co-author was removed or added after acceptance, which must be cleared with the program chairs. Once files are sent to Springer, authorship cannot be changed.
 
 ---
 
@@ -91,9 +97,9 @@ Work through CR-1 to CR-5 in order for each paper. Use the checklist below:
 ```
 Paper #__  Sub. ID: ______
 
-[ ] CR-1  Page count ≤ 16 (or action noted)
+[ ] CR-1  Page count ≥ 4 (full ≥ 12, short ≥ 6, ≥ 2/3 full overall) and ≤ 20 soft limit (or action noted)
 [ ] CR-2  LNCS LaTeX llncs.cls or .docx Word template used; no .docm files
-[ ] CR-3  Author list in paper header matches Tracking Table exactly
+[ ] CR-3  Author list matches Tracking Table exactly; consistent across papers; complex names flagged for Author Index; PC 2-paper cap respected
 [ ] CR-4  LTP is LNCS-specific form; corresponding author matches paper header; wet signature present
 [ ] CR-5  "Disclosure of Interests" section present, correctly placed (after Acknowledgments, before references)
 ```
@@ -121,7 +127,7 @@ Update `tracking/paper-tracking.md` immediately after completing the check for e
 For example:
 
 ```
-> **Failure note (#7):** CR-1: Paper is 18 pages (exceeds 16-page soft limit). Authors contacted 2026-04-16 and asked to reduce to ≤ 16 pages.
+> **Failure note (#7):** CR-1: Paper is 22 pages (exceeds 20-page soft limit). Authors contacted 2026-04-16 and asked to reduce to ≤ 20 pages.
 ```
 
 If multiple rules fail, list each on a separate line within the same blockquote:

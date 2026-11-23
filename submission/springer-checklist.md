@@ -1,47 +1,52 @@
 # Springer Submission Checklist
 
-Pre-submission checklist for the VERIF-AI 2026 LNCS proceedings. Work through every item in order and tick each checkbox before sending the final package to Springer.
+Pre-submission checklist for the VERIF-AI 2026 LNCS proceedings (aligned with `instructions.md` and `springer-files/CS_Editors_Proceedings_guidelines.pdf`, Sect. 11). Work through every item in order and tick each checkbox before sending the final package to Springer.
 
-> **Timing note:** Springer requires **8–10 weeks** from receipt of the complete, correct file set to publish the proceedings. If printed copies are needed at the conference, all files must arrive at Springer **10 weeks before the conference start date** (8–11 March 2026, so no later than **early January 2026**). Do not send the zip until every item below is ticked — late changes after submission are not possible.
+> **Timing note:** Springer requires **8–10 weeks** from receipt of the complete, correct file set to publish the proceedings. (The 10-week pre-conference deadline only applies when printed proceedings are needed at the event itself; VERIF-AI 2026 was held 8–11 March 2026.) Do not send the zip until every item below is ticked — late changes after submission (including authorship or corresponding-author changes) are not possible.
 
 ---
 
 ## Papers
 
 - [ ] **All camera-ready PDFs received** — confirm that a PDF has been received for every one of the 25 papers and that the "Camera-Ready Received" column in `tracking/paper-tracking.md` shows `Yes` or a received date for all 25 rows.
-- [ ] **All source files received** — confirm that the accompanying LaTeX source files (`.tex`, `.bib`/`.bbl`, images) or Word source file (`.docx`) has been received for every paper and that the "Source Files Received" column in `tracking/paper-tracking.md` shows `Yes` or a received date for all 25 rows.
-- [ ] **All compliance checks pass** — confirm that the "Compliance Check" column in `tracking/paper-tracking.md` shows `Pass` for all 25 papers. No paper may remain `Pending` or `Fail` at submission.
+- [ ] **All source files received** — confirm that the accompanying LaTeX source files (`.tex`, `.bib`/`.bbl`, images/figures) or Word source file (`.docx`) have been received for every paper and that the "Source Files Received" column in `tracking/paper-tracking.md` shows `Yes` or a received date for all 25 rows.
+- [ ] **All compliance checks pass and LaTeX papers compile** — confirm that `Compliance Check` is `Pass` and `Compilation Status` is `OK` (or `N/A` for Word papers) for all 25 rows in `tracking/paper-tracking.md`, and run `make proceedings` to verify local PDF assembly and pagination.
 - [ ] **All papers use the LNCS template** — confirm that every camera-ready paper was produced with either the official LNCS LaTeX template (`llncs.cls`) or the official LNCS Word template. Reject any `.docm` files; authors must resave as `.docx` before this item can be ticked.
+- [ ] **Page counts meet Springer length rules** — confirm every paper is at least **4 pages** (papers < 4 pages are moved to back matter and not indexed — verify Paper #2 Extended Abstract), short papers ≥ 6 pages, full papers ≥ 12 pages with **at least 2/3 full papers**, soft limit ≤ 20 pages, and Springer contacted for any paper ≥ 30 pages.
 
 ---
 
 ## Licence-to-Publish
 
-- [ ] **LNCS-specific LTP with wet signature received for all 25 papers** — confirm that the signed Licence-to-Publish agreement for each paper uses the LNCS-specific LTP form (not any other Springer agreement). Each LTP must bear a handwritten (wet) signature; digital signatures are not acceptable and render the LTP invalid.
-- [ ] **Corresponding author on each LTP matches the paper header** — confirm that the name of the corresponding author on every signed LTP matches the corresponding author marked on that paper's header exactly. Any mismatch invalidates the LTP; request a corrected copy before ticking this item.
+- [ ] **LNCS-specific LTP with wet signature received for all 25 papers** — confirm that the signed Licence-to-Publish agreement for each paper uses the attached LNCS-specific form (`springer-files/SNCS_ProceedingsPaper_LTP_ST_SN_Switzerland.docx`, not any other Springer agreement) and bears a handwritten (wet) signature. Place each signed LTP inside its paper's submission folder.
+- [ ] **Corresponding author on each LTP matches the paper header** — confirm that the name of the corresponding author on every signed LTP matches the single corresponding author marked on that paper's header (and email address) exactly. Any mismatch invalidates the LTP; request a corrected copy before ticking this item.
 
 ---
 
-## Table of Contents
+## Table of Contents & Author Index
 
-- [ ] **All fields complete in `submission/toc.csv`** — confirm that every row in the ToC CSV has a non-empty Starting Page, Corresponding Author Name, Corresponding Author Email, and Submission Folder Number. No field may be blank at submission.
-- [ ] **Topical Part Titles section headings added** — confirm that papers in `submission/toc.csv` have been grouped by topic (not by conference session) and that appropriate Part Titles section headings have been inserted in the `Part Titles` column.
+- [ ] **All fields complete in `submission/toc.csv` (and Springer Excel template)** — confirm every row has a non-empty Starting Page, Corresponding Author Name, Corresponding Author Email, and Submission Folder Number. Transfer to `springer-files/Table_of_Contents_template.xlsx` (or supply in an equivalent electronic format) for Springer.
+- [ ] **Topical Part Titles section headings added** — confirm that papers in `submission/toc.csv` (and `proceedings.tex`) have been grouped by topic (not by conference session, with no session numbering) and that meaningful Part Titles section headings have been entered.
+- [ ] **Non-straightforward author names list prepared** — compile a list (`Given Name; Family Name`) for authors with complex surnames, particles, suffixes, or non-Western order (verify e.g. `Lefevre Louis` in Paper #6, Sub. ID `4854`), and confirm identical spelling across all papers for multi-paper authors.
 
 ---
 
 ## Front Matter
 
-- [ ] **Preface finalized** — confirm that `front-matter/preface.md` contains no placeholder text (search for `PLACEHOLDER`). All narrative sections (Scope and Aims, Review Process, Acceptance Statistics, Acknowledgements, Volume Editors) must be completed.
-- [ ] **Organization pages finalized** — confirm that `front-matter/organization-pages.md` contains no placeholder text (search for `PLACEHOLDER`). All committee roles must be populated with real names, affiliations, and countries.
+- [ ] **Preface finalized (Markdown and LaTeX/PDF)** — confirm that `front-matter/preface.md` and `front-matter/preface.tex` contain no `PLACEHOLDER` or `TODO` markers, are written in American English past tense, cover scope, review process, acceptance statistics, and **how PC-coauthored papers were objectively handled** during review, and compile cleanly via `make front-matter`.
+- [ ] **Organization pages finalized (Markdown and LaTeX/PDF)** — confirm that `front-matter/organization-pages.md` and `front-matter/organization-pages.tex` contain no `PLACEHOLDER` markers, list PC members and reviewers alphabetically by surname with university and country only (no departments/labs, no bios/photos), and compile cleanly via `make front-matter`. Include both front-matter source and PDF in the `frontmatter` folder for Springer.
 
 ---
 
 ## Springer Administration
 
-- [ ] **Volume number requested from Springer** — contact `anna.kramer@springer.com` to request the LNCS volume number as soon as collection begins. Do not finalize Submission Folder Numbers in the ToC CSV or name any paper folders until the volume number is confirmed.
-- [ ] **Two volume numbers requested if total page count exceeds 500 pages** — sum the Page Count column in `tracking/paper-tracking.md`. If the total exceeds 500 pages, request two volume numbers from `anna.kramer@springer.com` before proceeding.
-- [ ] **4-week free access opt-in decision communicated to Springer** — notify Springer when sending the files whether you wish to enable the optional 4-week free access offer for conference participants via the conference website. This opt-in must be communicated at submission time.
-- [ ] **All contributing authors notified of Springer Nature Code of Conduct** — draw all authors' attention to the Springer Nature Code of Conduct at https://www.springernature.com/gp/authors/book-authors-code-of-conduct before final submission.
-- [ ] **Per-paper folder naming convention verified** — confirm that every paper's submission folder is named using the convention `<volume-number><4-digit-starting-page>` (e.g., for a paper starting on page 15 of volume 16456, the folder is named `164560015`). One additional folder is required for the front matter. All folders are zipped into a single zip file labelled with the volume number.
+- [ ] **Volume number requested from Springer** — contact `anna.kramer@springer.com` to request the LNCS volume number as soon as collection begins. Do not finalize Submission Folder Numbers in `submission/toc.csv` or rename paper folders to `<volNNNN>` until the volume number is confirmed.
+- [ ] **Two volume numbers requested if total page count exceeds 700 pages** — sum the Page Count column in `tracking/paper-tracking.md`. Per `instructions.md` and Springer Guidelines Sect. 3.4, if the total exceeds **700 pages**, request two volume numbers from `anna.kramer@springer.com`.
+- [ ] **Post-event revision subtitle & peer-review statistics communicated** — inform Springer whether authors were given the opportunity to revise papers after the March 2026 workshop (affects volume subtitle, e.g., *"Revised Selected Papers"*), and provide peer-review process & acceptance statistics requested with the volume number (for SpringerLink / Crossmark).
+- [ ] **PC-member 2-paper cap verified** — confirm that no PC Chair, PC member, or volume editor co-authored more than 2 papers in the volume (Springer Guidelines Sect. 3), and that any volume-editor ≠ PC-Chair exception was approved by Ronan Nugent (`ronan.nugent@springer.com`).
+- [ ] **4-week free access opt-in and copy order estimate communicated** — notify Springer when sending files whether to enable the optional 4-week free online access via the workshop website, and provide an estimate of any print/online proceedings copies needed (with shipping/billing addresses and VAT number if ordering print copies).
+- [ ] **Open Choice / Open Access list submitted (if applicable)** — if any individual papers opt for Open Choice (or full-volume Open Access), provide the list, invoicing addresses, and CC-BY LTP agreements at least **3 weeks before** the file deadline (`lncs@springer.com`).
+- [ ] **All contributing authors notified of Springer Nature Code of Conduct** — draw all authors' attention to the Springer Nature Code of Conduct at https://www.springernature.com/gp/authors/book-authors-code-of-conduct (`springer-files/Publisher's_Code_of_Conduct_for_Book_Authors.pdf`).
+- [ ] **Per-paper folder naming convention and contents verified** — confirm each paper has its own folder named `<volume-number><4-digit-starting-page>` (e.g., `164560015`) containing its source files (`.tex`/`.bib`/`.bbl`/images or `.docx`), compiled PDF, signed LTP, and any Alt Text Excel file; plus a `frontmatter` folder. Zip all folders together (`.zip`, not `.tar`) labelled with the volume number.
 - [ ] **Separate unzipped PDF-only folder prepared** — confirm that a separate, unzipped directory containing only the PDFs of all 25 papers has been prepared alongside the main zip file, as required by Springer.
-- [ ] **Volume editor ORCIDs included in the Production Word file** — confirm that the ORCIDs for all volume editors have been entered in the Production Word file sent by Springer together with the volume number.
+- [ ] **Production Word file completed with editor ORCIDs and addresses** — confirm that full names (including middle initials), full postal addresses (with postal codes), and ORCIDs for all volume editors have been entered in the Production Word file sent by Springer with the volume number.

@@ -1,59 +1,92 @@
-% organization-pages.tex
-% LNCS organization pages for VERIF-AI 2026.
-% This file is \input-ed by front-matter.tex; it must NOT contain
-% \documentclass, \begin{document}, or \end{document}.
+% front-matter/organization-pages.tex
+%
+% LNCS front-matter: Organization Pages for VERIF-AI 2026.
+% \input-ed by front-matter/front-matter.tex and proceedings.tex.
+% Do NOT add \documentclass or \begin{document} here.
+%
+% Styled to match springer-files/frontmatter_sample.pdf:
+%   - Centered "Organization" heading with running head "Organization"
+%   - Two-column Name | University, Country alignment without bullet points
+%   - Two-column Additional Reviewers list (multicol is loaded by llncs.cls)
 %
 % -----------------------------------------------------------------------
 % EDITORIAL NOTES (remove this comment block before submission):
 %
-%  - Program Committee members must be listed in ALPHABETICAL ORDER BY
-%    SURNAME. Do not list in order of seniority, institution, or any
-%    other criterion.
-%  - For each member list UNIVERSITY AND COUNTRY ONLY -- do not include
-%    department, lab name, research group, or any sub-unit of the
-%    institution.
-%  - Sponsors and logos, if any, appear at the END of the front-matter
-%    package, not within the organization pages.
-%  - Do NOT include biographies or photographs anywhere in this file.
-%  - Verify every name, affiliation, and country against the official
-%    conference records before finalizing this file for submission.
-%  - Front-matter LaTeX and Word templates are available from the volume
-%    editors' website: http://bit.ly/2HaWmko
+%  - Program Committee members and Additional Reviewers must be listed in
+%    ALPHABETICAL ORDER BY SURNAME.
+%  - List UNIVERSITY AND COUNTRY ONLY -- do not include department, lab,
+%    research group, or sub-unit. Do not omit countries.
+%  - Spell affiliations consistently across all entries.
+%  - Steering Committee (if any) appears above Program Committee.
+%  - Sponsors and logos (e.g., LASER Foundation), if any, appear at the END
+%    of the organization pages.
+%  - Do NOT include biographies or photographs.
+%  - Verify every name, affiliation, and country against official records
+%    before finalizing (remove the PLACEHOLDER lines below once confirmed).
+%  - Official templates: http://bit.ly/2HaWmko
 % -----------------------------------------------------------------------
 
-\section*{Organization}
+\chapter*{Organization}
+\markboth{Organization}{Organization}
 
-\subsubsection*{General Chairs}
+\subsection*{General Chair}
+\noindent
+\begin{tabular}{@{}p{4.3cm}@{\hspace{0.3cm}}p{7.6cm}@{}}
+Bertrand Meyer & Eiffel Software, USA/Switzerland \\
+\end{tabular}
 
-\begin{itemize}
-  \item PLACEHOLDER -- Name, University, Country
-\end{itemize}
+\subsection*{Program Committee Chairs}
+\noindent
+\begin{tabular}{@{}p{4.3cm}@{\hspace{0.3cm}}p{7.6cm}@{}}
+Jean-Michel Bruel & University of Toulouse, France \\
+Bertrand Meyer & Eiffel Software, USA/Switzerland \\
+\end{tabular}
 
-\subsubsection*{Program Committee Chairs}
+% Program Committee: ordered alphabetically by surname (25 members).
+% Format: Firstname Lastname & University/Institution, Country
+\subsection*{Program Committee}
+\noindent
+\begin{tabular}{@{}p{4.3cm}@{\hspace{0.3cm}}p{7.6cm}@{}}
+Amel Bennaceur & Open University, UK \\
+Saddek Bensalem & University of Grenoble-Alpes, France \\
+Silvia Bonfanti & University of Bergamo, Italy \\
+Jean-Michel Bruel & University of Toulouse, France \\
+Swarat Chaudhuri & University of Texas, USA \\
+Beno\^{i}t Combemale & INRIA, France \\
+Sophie Ebersold & University of Toulouse, France \\
+Angelo Gargantini & University of Bergamo, Italy \\
+Li Huang & Constructor Institute of Technology, Switzerland \\
+Mikol\'{a}\v{s} Janota & Czech Technical University in Prague, Czech Republic \\
+Guy Katz & Hebrew University, Israel \\
+Atif Mashkoor & Johannes Kepler University, Austria \\
+Tim Menzies & North Carolina State University, USA \\
+Bertrand Meyer & Eiffel Software, USA/Switzerland \\
+Rosemary Monahan & Maynooth University, Ireland \\
+Gail Murphy & University of British Columbia, Canada \\
+Iulian Neamtiu & New Jersey Institute of Technology, USA \\
+Omer Landry Nguena Timo & Universit\'{e} du Qu\'{e}bec en Outaouais, Canada \\
+Ileana Ober & University of Toulouse, France \\
+Iulian Ober & ISAE-SUPAERO, France \\
+Manuel Oriol & Constructor Institute of Technology, Switzerland \\
+Meriem Ouederni & University of Toulouse, France \\
+Cesare Pautasso & University of Lugano, Switzerland \\
+Bernhard Steffen & TU Dortmund, Germany \\
+Xingyu Zhao & University of Warwick, UK \\
+\end{tabular}
 
-\begin{itemize}
-  \item PLACEHOLDER -- Name, University, Country
-\end{itemize}
+\subsection*{Organizing Committee}
+\noindent
+\begin{tabular}{@{}p{4.3cm}@{\hspace{0.3cm}}p{7.6cm}@{}}
+Jean-Michel Bruel & University of Toulouse, France \\
+Bertrand Meyer & Eiffel Software, USA/Switzerland \\
+\textit{[PLACEHOLDER]} & \textit{Add local organizers or remove line} \\
+\end{tabular}
 
-% Program Committee: list in ALPHABETICAL ORDER BY SURNAME.
-% Format: Firstname Lastname, University, Country
-% Include university and country ONLY -- no department or lab.
-\subsubsection*{Program Committee}
-
-\begin{itemize}
-  \item PLACEHOLDER -- Name, University, Country
-  \item PLACEHOLDER -- Name, University, Country
-  \item PLACEHOLDER -- Name, University, Country
-\end{itemize}
-
-\subsubsection*{Organizing Committee}
-
-\begin{itemize}
-  \item PLACEHOLDER -- Name, University, Country
-\end{itemize}
-
-\subsubsection*{Additional Reviewers}
-
-\begin{itemize}
-  \item PLACEHOLDER -- Name, University, Country
-\end{itemize}
+% List Additional Reviewers in ALPHABETICAL ORDER BY SURNAME (names only, 2 columns).
+% Remove this subsection if no additional subreviewers were used.
+\subsection*{Additional Reviewers}
+\begin{multicols}{2}
+\noindent
+\textit{[PLACEHOLDER -- Reviewer 1]}\\
+\textit{[PLACEHOLDER -- Reviewer 2]}
+\end{multicols}

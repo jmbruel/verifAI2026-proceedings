@@ -1,11 +1,13 @@
 .kiro
 
-# Camera-ready PDFs and images in papers/ -- add explicitly with `git add -f` if tracking is needed
+# Camera-ready / compiled PDFs and ZIP archives in papers/ (any depth)
+# Add explicitly with `git add -f` if you need to version a specific PDF.
+# Note: .tex, .bib, .bbl, figure images (.png/.jpg/.eps), and .docx are NOT ignored
+# because Springer requires all paper source files.
 papers/*.pdf
-papers/*.png
-papers/*.jpg
-papers/*.eps
+papers/**/*.pdf
 papers/*.zip
+papers/**/*.zip
 
 # macOS metadata
 .DS_Store
@@ -14,10 +16,17 @@ papers/*.zip
 *.swp
 *~
 
-# LaTeX build artefacts (root and front-matter/)
+# LaTeX build artefacts (root, front-matter/, and per-paper folders)
 *.aux
 *.log
 *.toc
 *.out
+*.blg
+*.fls
+*.fdb_latexmk
 *.synctex.gz
 proceedings.pdf
+front-matter/front-matter.pdf
+.vscode
+papers
+tracking/author-emails.md

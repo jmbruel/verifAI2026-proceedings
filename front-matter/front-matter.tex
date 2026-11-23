@@ -11,27 +11,25 @@
 %
 %     cd front-matter
 %     TEXINPUTS=..: pdflatex front-matter.tex
-%     TEXINPUTS=..: pdflatex front-matter.tex   % second pass for TOC/refs
+%     TEXINPUTS=..: pdflatex front-matter.tex   % second pass for refs
 %
 %   Or use the Makefile target from the workspace root:
 %
 %     make front-matter
 %
 %   Do NOT copy or symlink llncs.cls into this directory; keeping it at the
-%   workspace root ensures proceedings.tex can find it without duplication.
+%   workspace root ensures proceedings.tex and per-paper builds share one copy.
 % -----------------------------------------------------------------------
 
 \documentclass[runningheads]{llncs}
 
 \usepackage[T1]{fontenc}
 
-% -----------------------------------------------------------------------
-% Running heads for the front matter
-% -----------------------------------------------------------------------
-\titlerunning{VERIF-AI 2026}
-\authorrunning{VERIF-AI 2026}
-
 \begin{document}
+
+% Springer prepares front pages I--IV; Preface starts on page V (Roman).
+\frontmatter
+\setcounter{page}{5}
 
 % ------------------------------------------------------------------
 % Preface
