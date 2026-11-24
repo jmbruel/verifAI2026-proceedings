@@ -1,6 +1,6 @@
 # VERIF-AI 2026 Proceedings Workspace
 
-This repository manages the full production lifecycle for the **VERIF-AI 2026** proceedings. VERIF-AI 2026 is a workshop held in **Villebrumier, France, 8–11 March 2026**, organized by the **LASER Foundation**. The proceedings will be published as a volume in Springer's **Lecture Notes in Computer Science (LNCS)** series. The workspace covers 25 accepted papers, from collecting camera-ready submissions through verifying LaTeX sources, checking pagination locally, and producing the final Springer submission package.
+This repository manages the full production lifecycle for the **VERIF-AI 2026** proceedings. VERIF-AI 2026 is a workshop held in **Villebrumier, France, 8–11 March 2026**, organized by the **LASER Foundation**. The proceedings will be published as a volume in Springer's **Lecture Notes in Computer Science (LNCS)** series. The workspace covers 24 accepted papers, from collecting camera-ready submissions through verifying LaTeX sources, checking pagination locally, and producing the final Springer submission package.
 
 ---
 
@@ -11,13 +11,13 @@ verifAI2026-proceedings/
 ├── README.md                          # This file — overview, editorial & build workflow
 ├── .gitignore                         # Excludes paper PDFs/ZIPs and LaTeX build artefacts; tracks sources
 ├── instructions.md                    # Springer acceptance email & volume editor instructions
-├── acceptedPapers.md                  # Authoritative list of 25 accepted papers (read-only)
+├── acceptedPapers.md                  # Authoritative list of 24 accepted papers (read-only)
 ├── llncs.cls                          # Springer LNCS LaTeX class (v2.26, self-contained)
-├── proceedings.tex                    # Local pdfpages assembly harness (front matter + 25 paper stubs)
+├── proceedings.tex                    # Local pdfpages assembly harness (front matter + 24 paper stubs)
 ├── Makefile                           # Build targets: front-matter, paper, papers, proceedings, clean
 │
 ├── tracking/
-│   ├── paper-tracking.md              # Per-paper status table (25 rows, 10 status columns)
+│   ├── paper-tracking.md              # Per-paper status table (24 rows, 10 status columns)
 │   ├── compliance-rules.md            # Criteria applied during compliance checks (CR-1 to CR-5)
 │   └── author-emails.md               # Draft follow-up emails for missing/non-compliant papers
 │
@@ -68,7 +68,7 @@ Work through these steps in order. Update `tracking/paper-tracking.md` as each s
 
 11. **Work through the submission checklist.** Open `submission/springer-checklist.md` and tick every item. Do not send the package until every item is verified.
 
-12. **Submit to Springer.** Zip all per-paper folders together with the `frontmatter` folder (`.zip`, not `.tar`, labelled with the volume number), prepare a separate **unzipped** directory containing only the PDFs of all 25 papers, and send the complete package to Springer along with the completed Production Word file and ToC/corresponding-author sheet. Allow **8–10 weeks** from receipt for publication.
+12. **Submit to Springer.** Zip all per-paper folders together with the `frontmatter` folder (`.zip`, not `.tar`, labelled with the volume number), prepare a separate **unzipped** directory containing only the PDFs of all 24 papers, and send the complete package to Springer along with the completed Production Word file and ToC/corresponding-author sheet. Allow **8–10 weeks** from receipt for publication.
 
 ---
 

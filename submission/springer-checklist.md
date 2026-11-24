@@ -8,9 +8,9 @@ Pre-submission checklist for the VERIF-AI 2026 LNCS proceedings (aligned with `i
 
 ## Papers
 
-- [ ] **All camera-ready PDFs received** — confirm that a PDF has been received for every one of the 25 papers and that the "Camera-Ready Received" column in `tracking/paper-tracking.md` shows `Yes` or a received date for all 25 rows.
-- [ ] **All source files received** — confirm that the accompanying LaTeX source files (`.tex`, `.bib`/`.bbl`, images/figures) or Word source file (`.docx`) have been received for every paper and that the "Source Files Received" column in `tracking/paper-tracking.md` shows `Yes` or a received date for all 25 rows.
-- [ ] **All compliance checks pass and LaTeX papers compile** — confirm that `Compliance Check` is `Pass` and `Compilation Status` is `OK` (or `N/A` for Word papers) for all 25 rows in `tracking/paper-tracking.md`, and run `make proceedings` to verify local PDF assembly and pagination.
+- [ ] **All camera-ready PDFs received** — confirm that a PDF has been received for every one of the 24 papers and that the "Camera-Ready Received" column in `tracking/paper-tracking.md` shows `Yes` or a received date for all 24 rows.
+- [ ] **All source files received** — confirm that the accompanying LaTeX source files (`.tex`, `.bib`/`.bbl`, images/figures) or Word source file (`.docx`) have been received for every paper and that the "Source Files Received" column in `tracking/paper-tracking.md` shows `Yes` or a received date for all 24 rows.
+- [ ] **All compliance checks pass and LaTeX papers compile** — confirm that `Compliance Check` is `Pass` and `Compilation Status` is `OK` (or `N/A` for Word papers) for all 24 rows in `tracking/paper-tracking.md`, and run `make proceedings` to verify local PDF assembly and pagination.
 - [ ] **All papers use the LNCS template** — confirm that every camera-ready paper was produced with either the official LNCS LaTeX template (`llncs.cls`) or the official LNCS Word template. Reject any `.docm` files; authors must resave as `.docx` before this item can be ticked.
 - [ ] **Page counts meet Springer length rules** — confirm every paper is at least **4 pages** (papers < 4 pages are moved to back matter and not indexed — verify Paper #2 Extended Abstract), short papers ≥ 6 pages, full papers ≥ 12 pages with **at least 2/3 full papers**, soft limit ≤ 20 pages, and Springer contacted for any paper ≥ 30 pages.
 
@@ -18,7 +18,7 @@ Pre-submission checklist for the VERIF-AI 2026 LNCS proceedings (aligned with `i
 
 ## Licence-to-Publish
 
-- [ ] **LNCS-specific LTP with wet signature received for all 25 papers** — confirm that the signed Licence-to-Publish agreement for each paper uses the attached LNCS-specific form (`springer-files/SNCS_ProceedingsPaper_LTP_ST_SN_Switzerland.docx`, not any other Springer agreement) and bears a handwritten (wet) signature. Place each signed LTP inside its paper's submission folder.
+- [ ] **LNCS-specific LTP with wet signature received for all 24 papers** — confirm that the signed Licence-to-Publish agreement for each paper uses the attached LNCS-specific form (`springer-files/SNCS_ProceedingsPaper_LTP_ST_SN_Switzerland.docx`, not any other Springer agreement) and bears a handwritten (wet) signature. Place each signed LTP inside its paper's submission folder.
 - [ ] **Corresponding author on each LTP matches the paper header** — confirm that the name of the corresponding author on every signed LTP matches the single corresponding author marked on that paper's header (and email address) exactly. Any mismatch invalidates the LTP; request a corrected copy before ticking this item.
 
 ---
@@ -48,5 +48,5 @@ Pre-submission checklist for the VERIF-AI 2026 LNCS proceedings (aligned with `i
 - [ ] **Open Choice / Open Access list submitted (if applicable)** — if any individual papers opt for Open Choice (or full-volume Open Access), provide the list, invoicing addresses, and CC-BY LTP agreements at least **3 weeks before** the file deadline (`lncs@springer.com`).
 - [ ] **All contributing authors notified of Springer Nature Code of Conduct** — draw all authors' attention to the Springer Nature Code of Conduct at https://www.springernature.com/gp/authors/book-authors-code-of-conduct (`springer-files/Publisher's_Code_of_Conduct_for_Book_Authors.pdf`).
 - [ ] **Per-paper folder naming convention and contents verified** — confirm each paper has its own folder named `<volume-number><4-digit-starting-page>` (e.g., `164560015`) containing its source files (`.tex`/`.bib`/`.bbl`/images or `.docx`), compiled PDF, signed LTP, and any Alt Text Excel file; plus a `frontmatter` folder. Zip all folders together (`.zip`, not `.tar`) labelled with the volume number.
-- [ ] **Separate unzipped PDF-only folder prepared** — confirm that a separate, unzipped directory containing only the PDFs of all 25 papers has been prepared alongside the main zip file, as required by Springer.
+- [ ] **Separate unzipped PDF-only folder prepared** — confirm that a separate, unzipped directory containing only the PDFs of all 24 papers has been prepared alongside the main zip file, as required by Springer.
 - [ ] **Production Word file completed with editor ORCIDs and addresses** — confirm that full names (including middle initials), full postal addresses (with postal codes), and ORCIDs for all volume editors have been entered in the Production Word file sent by Springer with the volume number.

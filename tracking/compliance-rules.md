@@ -38,18 +38,18 @@ This document defines the five compliance rules (CR-1 through CR-5) applied to e
 
 ## CR-3 — Author List Consistency
 
-**Rule:** The author names listed in the **paper header** (PDF first page and, for LaTeX, the `\author{}` command) must match the **Authors** field in `paper-tracking.md` exactly — same names, same order, same spelling.
+**Rule:** The author list in the **paper header** (PDF first page and, for LaTeX, `\author{}`) must match the signed LTP, contain the same set of authors as accepted (no unauthorized additions or removals), and use consistent spelling across papers. **Changes in author ordering relative to EasyChair are acceptable** — the camera-ready paper and signed LTP are authoritative for final author order.
 
 **Applying CR-3:**
 
 1. Open the camera-ready PDF and read the author list from the paper header.
-2. Compare against the Authors column in `paper-tracking.md` for the same paper row.
-3. Any discrepancy (added, removed, reordered, or differently spelled name) requires author confirmation in writing before the entry can be corrected and CR-3 cleared.
+2. Confirm no authors were added or removed relative to `acceptedPapers.md` (reordering relative to EasyChair is fine; update `submission/toc.csv` and `proceedings.tex` to match the final camera-ready paper).
+3. Confirm the author list in the paper header matches the signed LTP.
 4. For authors contributing to more than one paper, confirm their name is spelled and structured identically across all papers and `submission/toc.csv` (Springer Guidelines Sect. 5.3).
-5. Flag any non-straightforward, multi-part, or possibly reversed author names (e.g., verify `Lefevre Louis` in Paper #6, Sub. ID `4854`) for the Author Index disambiguation list (`Given Name; Family Name`) sent to Springer.
+5. Flag any non-straightforward, multi-part, or possibly reversed author names for the Author Index disambiguation list (`Given Name; Family Name`) sent to Springer.
 6. Confirm compliance with Springer's policy (Sect. 3) that no PC Chair, PC member, or volume editor co-authors more than **2 papers** in the volume.
 
-> **Note:** Do not silently update the Tracking Table to match the paper. Discrepancies may indicate a co-author was removed or added after acceptance, which must be cleared with the program chairs. Once files are sent to Springer, authorship cannot be changed.
+> **Note:** Once files are sent to Springer, authorship (names, order, and corresponding author) cannot be changed.
 
 ---
 
@@ -99,7 +99,7 @@ Paper #__  Sub. ID: ______
 
 [ ] CR-1  Page count ≥ 4 (full ≥ 12, short ≥ 6, ≥ 2/3 full overall) and ≤ 20 soft limit (or action noted)
 [ ] CR-2  LNCS LaTeX llncs.cls or .docx Word template used; no .docm files
-[ ] CR-3  Author list matches Tracking Table exactly; consistent across papers; complex names flagged for Author Index; PC 2-paper cap respected
+[ ] CR-3  Author set matches accepted paper (order per camera-ready/LTP); consistent across papers; complex names flagged; PC 2-paper cap respected
 [ ] CR-4  LTP is LNCS-specific form; corresponding author matches paper header; wet signature present
 [ ] CR-5  "Disclosure of Interests" section present, correctly placed (after Acknowledgments, before references)
 ```
