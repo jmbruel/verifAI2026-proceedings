@@ -10,12 +10,13 @@
 #   make paper DIR=papers/p1992        -- compile one LaTeX paper independently (optional MAIN=foo.tex)
 #   make papers                        -- compile all LaTeX papers found under papers/*/
 #   make proceedings                   -- assemble proceedings.pdf via pdfpages
+#   make dashboard                     -- generate tracking/dashboard.html from tracking & ToC files
 #   make clean                         -- remove root and front-matter LaTeX build artefacts
 #   make clean-papers                  -- remove LaTeX build artefacts inside papers/*/
 
 PDFLATEX := pdflatex -interaction=nonstopmode -halt-on-error
 
-.PHONY: help front-matter paper papers proceedings clean clean-papers
+.PHONY: help front-matter paper papers proceedings dashboard clean clean-papers
 
 ## Default target: print usage
 help:
@@ -26,6 +27,7 @@ help:
 	@echo "  make paper DIR=papers/p<id>    Compile one LaTeX paper inside its folder (optional MAIN=file.tex)"
 	@echo "  make papers                    Compile every LaTeX paper folder under papers/*/"
 	@echo "  make proceedings               Assemble proceedings.pdf (front matter + pdfpages)"
+	@echo "  make dashboard                 Generate interactive status dashboard (tracking/dashboard.html)"
 	@echo "  make clean                     Remove root and front-matter LaTeX build artefacts"
 	@echo "  make clean-papers              Remove LaTeX build artefacts inside papers/*/"
 	@echo ""
@@ -99,6 +101,10 @@ papers:
 proceedings:
 	$(PDFLATEX) proceedings.tex
 	$(PDFLATEX) proceedings.tex
+
+## Generate the self-contained interactive status dashboard from tracking/ and submission/.
+dashboard:
+	python3 scripts/build_dashboard.py
 
 ## Remove LaTeX build artefacts from the workspace root and from front-matter/.
 clean:

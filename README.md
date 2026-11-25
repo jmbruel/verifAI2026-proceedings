@@ -1,6 +1,6 @@
 # VERIF-AI 2026 Proceedings Workspace
 
-This repository manages the full production lifecycle for the **VERIF-AI 2026** proceedings. VERIF-AI 2026 is a workshop held in **Villebrumier, France, 8–11 March 2026**, organized by the **LASER Foundation**. The proceedings will be published as a volume in Springer's **Lecture Notes in Computer Science (LNCS)** series. The workspace covers 24 accepted papers, from collecting camera-ready submissions through verifying LaTeX sources, checking pagination locally, and producing the final Springer submission package.
+This repository manages the full production lifecycle for the **VERIF-AI 2026** proceedings. VERIF-AI 2026 is a workshop held in **Villebrumier, France, 8–11 March 2026**, organized by the **LASER Foundation**. The proceedings will be published in Springer's **Lecture Notes in Computer Science (LNCS)** series as **Volume 17411** (`LNCS 17411`). The workspace covers 24 accepted papers, from collecting camera-ready submissions through verifying LaTeX sources, checking pagination locally, and producing the final Springer submission package.
 
 ---
 
