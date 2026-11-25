@@ -1,5 +1,5 @@
 Part Titles,Starting Page,Paper Title,Authors,Corresponding Author Name,Corresponding Author Email,Submission Folder Number
-,,From Verification to Herding: Exploiting Software's Sparsity of Influence,"Tim Menzies, Kishan Ganguly",,,
+,,From Verification to Herding: Exploiting Software's Sparsity of Influence,"Tim Menzies, Kishan Kumar Ganguly",Tim Menzies,timm@ieee.org,
 ,,Abductive Vibe Coding (Extended Abstract),"Logan Murphy, Aren A. Babikian, Marsha Chechik",Logan Murphy,lmurphy@cs.toronto.edu,
 ,,Do AI models help produce verified bug fixes?,"Li Huang, Ilgiz Mustafin, Marco Piccioni, Alessandro Schena, Reto Weber, Bertrand Meyer",Li Huang,lihuang@constructor.university,
 ,,Modeling and Analysis of Non-Deterministic Executions of LLM-Based Agents via Finite Automata,"Armel Fedoung Sanou, Fabrice Mourlin, Youakim Badr",Armel Fedoung Sanou,armel.fedoung-sanou@u-pec.fr,
@@ -9,7 +9,7 @@ Part Titles,Starting Page,Paper Title,Authors,Corresponding Author Name,Correspo
 ,,Neuroforger: certified violation witnesses for smart contracts verification via LLMs,"Massimo Bartoletti, Enrico Lipparini",Enrico Lipparini,enrico.lipparini@unica.it,
 ,,Diversifying to Verify: When Task-Equivalent Programs Differ in Verifiability,"Shirley Yu, Ruben Martins",Ruben Martins,rubenm@andrew.cmu.edu,
 ,,Trustworthy Machine Learning Across the Lifecycle: A Synthesis of Current Methods,"Leonel Gamvou Tak-lai, Jonathan Roy, Sylvain Hallé, Fehmi Jaafar",Sylvain Hallé,shalle@acm.org,
-,,An Empirical Study on Generating Proven-to-be-Correct Dafny Programs,"Liam O'Reilly, Filippos Pantekis, Markus Roggenbach, Mukesh Tiwari",,,
+,,Checking GenAI with Formal Methods: Trust in Program Code Producing Tool Chains and an Empirical Analysis with Dafny,"Liam O'Reilly, Filippos Pantekis, Markus Roggenbach, Mukesh Tiwari",Markus Roggenbach,M.Roggenbach@swansea.ac.uk,
 ,,Adaptive Random Testing of Online Machine Learning Programs: Application to Opportunistic Software Composition,"Maxence Demougeot, Sylvie Trouilhet, Jean-Paul Arcangeli",Maxence Demougeot,Maxence.Demougeot@irit.fr,
 ,,SecretFan: Synthesizing Realistic Data without Breaking Privacy,"Laura Plein, Alexi Turcotte, Arina Hallemans, Andreas Zeller",Laura Plein,laura.plein@cispa.de,
 ,,AI-augmented MBSE: from Vibe-modeling towards assisted Verification and Validation,"Anca-Miruna Constantin, Christian Koumlah Mbey, Ileana Ober, Iulian Ober",Iulian Ober,iulian.ober@isae-supaero.fr,

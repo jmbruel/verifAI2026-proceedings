@@ -56,18 +56,17 @@
 % Helper macro to include one paper's compiled PDF and register it in TOC
 % Usage: \includepaper{<path/to/paper.pdf>}{<Paper Title>}{<Author List>}
 %
-% Note: pagecommand={\thispagestyle{empty}} avoids overprinting outer page
-% numbers on author PDFs that already carry their own running heads/numbers.
-% To stamp global draft page numbers onto included pages while checking
-% pagination, temporarily change to:
-%   pagecommand={\thispagestyle{plain}}
+% Note: pagecommand={\thispagestyle{plain}} stamps continuous volume page
+% numbers in the bottom footer while leaving each paper's own top running
+% head untouched. Switch to pagecommand={\thispagestyle{empty}} if you want
+% only the embedded author PDFs without footer page numbers.
 % -----------------------------------------------------------------------
 \newcommand{\includepaper}[3]{%
   \clearpage
   \phantomsection
   \addcontentsline{toc}{title}{#2}%
   \addcontentsline{toc}{author}{#3}%
-  \includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{#1}%
+  \includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{#1}%
 }
 
 \begin{document}
@@ -91,7 +90,7 @@
 
 % -----------------------------------------------------------------------
 % Main matter: accepted papers (assembled via pdfpages)
-% 22 of 24 received papers are uncommented below; 2 pending (#1, #11).
+% All 24 accepted papers are uncommented below.
 % -----------------------------------------------------------------------
 \mainmatter
 
@@ -104,8 +103,8 @@
 
 \part{[PLACEHOLDER -- Topical Section Title 1]}
 
-% Paper 1 (sub 1992): From Verification to Herding: Exploiting Software's Sparsity of Influence [PENDING]
-% \includepaper{papers/p1992/paper.pdf}{From Verification to Herding: Exploiting Software's Sparsity of Influence}{Tim Menzies and Kishan Ganguly}
+% Paper 1 (sub 1992): From Verification to Herding: Exploiting Software's Sparsity of Influence
+\includepaper{papers/p1992/paper.pdf}{From Verification to Herding: Exploiting Software's Sparsity of Influence}{Tim Menzies and Kishan Kumar Ganguly}
 
 % Paper 2 (sub 3744): Abductive Vibe Coding (Extended Abstract)
 \includepaper{papers/p3744/paper.pdf}{Abductive Vibe Coding (Extended Abstract)}{Logan Murphy, Aren A. Babikian and Marsha Chechik}
@@ -136,8 +135,8 @@
 % Paper 10 (sub 4668): Trustworthy Machine Learning Across the Lifecycle: A Synthesis of Current Methods
 \includepaper{papers/p4668/paper.pdf}{Trustworthy Machine Learning Across the Lifecycle: A Synthesis of Current Methods}{Leonel Gamvou Tak-lai, Jonathan Roy, Sylvain Hallé and Fehmi Jaafar}
 
-% Paper 11 (sub 5808): An Empirical Study on Generating Proven-to-be-Correct Dafny Programs [PENDING]
-% \includepaper{papers/p5808/paper.pdf}{An Empirical Study on Generating Proven-to-be-Correct Dafny Programs}{Liam O'Reilly, Filippos Pantekis, Markus Roggenbach and Mukesh Tiwari}
+% Paper 11 (sub 5808): Checking GenAI with Formal Methods: Trust in Program Code Producing Tool Chains and an Empirical Analysis with Dafny
+\includepaper{papers/p5808/paper.pdf}{Checking GenAI with Formal Methods: Trust in Program Code Producing Tool Chains and an Empirical Analysis with Dafny}{Liam O'Reilly, Filippos Pantekis, Markus Roggenbach and Mukesh Tiwari}
 
 % Paper 12 (sub 8595): Adaptive Random Testing of Online Machine Learning Programs: Application to Opportunistic Software Composition
 \includepaper{papers/p8595/paper.pdf}{Adaptive Random Testing of Online Machine Learning Programs: Application to Opportunistic Software Composition}{Maxence Demougeot, Sylvie Trouilhet and Jean-Paul Arcangeli}
