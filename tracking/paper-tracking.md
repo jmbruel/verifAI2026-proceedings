@@ -27,8 +27,7 @@ This table is the single source of truth for per-paper production status. Update
 | 16 | 6470 | AgenTiFy: Probabilistic Behavior Synthesis with Language Models for Autonomous Vehicle Testing | Sol Zilberman and Betty H.C. Cheng | 2026-11-26 | 2026-11-26 | 18 | 2026-11-20 | Pass | OK |
 | 17 | 8405 | Validating Multi-Model AI-Generated Acceptance Criteria in Requirements Engineering | Mateen Ahmed Abbasi, Petri Ihantola, Tommi Mikkonen and Niko Mäkitalo | 2026-11-24 | 2026-11-24 | 16 | 2026-11-18 | Pass | OK |
 | 18 | 9130 | Co-Evolutionary Challenges: When Software Engineering Meets Artificial Intelligence | Maha Moujahed, Maxence Demougeot, Mohamed Mahdi, Maryam Assmar, Alain Giorgetti, Gabriela Gonzalez-Saez, Nicolas Hili, Yves Ledru, Meriem Ouederni and Sylvie Trouilhet | 2026-11-24 | 2026-11-24 | 20 | 2026-11-20 | Pass | OK |
-| 19 | 9536 | ReqFusion: A Multi-Provider Framework for Automated PEGS Analysis Across Software Domains | Muhammad Khalid, Manuel Oriol and Yilmaz Uygun | 2026-11-23 | 2026-11-23 | 18 | No | Fail | OK |
-> **Failure note (#19):** CR-4: No Licence-to-Publish (LTP) file included in archive.
+| 19 | 9536 | ReqFusion: A Multi-Provider Framework for Automated PEGS Analysis Across Software Domains | Muhammad Khalid, Manuel Oriol and Yilmaz Uygun | 2026-11-23 | 2026-11-23 | 18 | 2026-11-25 | Pass | OK |
 | 20 | 6273 | Towards an Evaluation of LLM's Prior Knowledge for Test Case Generation | Gabriela Gonzalez-Saez, Yves Ledru and Nicolas Hili | 2026-11-22 | 2026-11-22 | 5 | 2026-11-22 | Fail | OK |
 > **Failure note (#20):** CR-1: 5 pages (below Springer 6-page short-paper guideline; meets ≥ 4-page indexing minimum). CR-5: Missing "Disclosure of Interests" section. Minor: LTP left Volume/Editors blank.
 | 21 | 2745 | A Typed Intermediate Representation for Neurosymbolic Formalization and Verification of Stock Index Methodologies | Dmitrii Zorin | 2026-11-21 | 2026-11-21 | 8 | 2026-11-19 | Pass | OK |
