@@ -1,6 +1,28 @@
 
 Event: VERIF-AI 2026, Villebrumier, France, 8–11 March 2026
+Volume: Springer LNCS 17411 (Edition ID: 696960)
 Website: https://www.laser-foundation.org/verifai-2026-provisional-program/
+Submission Portal (no password): https://bookmanuscriptsubmission.public.springernature.app/link/bookmanuscriptsubmission/696960-Bertrand.Meyer%40inf.ethz.ch
+Submission Contact: Sindhu Ramachandran (sindhu.ramachandran.consultant.1@springernature.com)
+
+---
+
+## Manuscript Submission Portal Instructions (LNCS 17411, Edition ID 696960)
+
+- **Planned submission date (per Springer portal email):** October 1, 2026 *(currently past planned date — coordinate promptly with Sindhu Ramachandran and submit as soon as remaining author fixes are in)*.
+- **Required portal items & declarations:**
+  1. Confirmation that all **third-party rights** have been obtained.
+  2. All **original source files** (Word, TeX, figures, etc.).
+  3. **A single PDF of the complete manuscript OR individual PDFs of each chapter.**
+  4. **Signed Licence-to-Publish (LTP) forms** and completed supporting files (e.g., production questionnaire / Production Word file), if requested.
+  5. **Folder labeling:** Label all paper folders with the volume number and starting page (`17411<4-digit-starting-page>`, e.g., `174110001`).
+- **Policies & guidelines:**
+  - [Springer's Guideline for Proceedings Editors](https://www.springernature.com/gp/authors/publish-a-book/step-by-step-conference-proceedings)
+  - [Books Publishing Policies](https://www.springernature.com/gp/policies/book-publishing-policies) (including Codes of Conduct)
+- **Content finality:** The accepted manuscript is considered final — no content changes are possible after submission, except minor proof corrections.
+- **Proxy-submission authorization:** The passwordless submission portal link is issued to `Bertrand.Meyer@inf.ethz.ch`. If anyone submits on Bertrand Meyer's behalf (e.g., Jean-Michel Bruel), they **must be explicitly authorized to act on his behalf**, including making the declaration confirming whether third-party rights have been obtained.
+
+---
 
 Information for Volume Editors and Conference Organizers
 

@@ -1,6 +1,6 @@
 # VERIF-AI 2026 Proceedings Workspace
 
-This repository manages the full production lifecycle for the **VERIF-AI 2026** proceedings. VERIF-AI 2026 is a workshop held in **Villebrumier, France, 8–11 March 2026**, organized by the **LASER Foundation**. The proceedings will be published in Springer's **Lecture Notes in Computer Science (LNCS)** series as **Volume 17411** (`LNCS 17411`). The workspace covers 24 accepted papers, from collecting camera-ready submissions through verifying LaTeX sources, checking pagination locally, and producing the final Springer submission package.
+This repository manages the full production lifecycle for the **VERIF-AI 2026** proceedings. VERIF-AI 2026 is a workshop held in **Villebrumier, France, 8–11 March 2026**, organized by the **LASER Foundation**. The proceedings will be published in Springer's **Lecture Notes in Computer Science (LNCS)** series as **Volume 17411** (`LNCS 17411`, **Edition ID 696960**). The workspace covers 24 accepted papers, from collecting camera-ready submissions through verifying LaTeX sources, checking pagination locally, and producing the final Springer submission package.
 
 ---
 
@@ -68,7 +68,7 @@ Work through these steps in order. Update `tracking/paper-tracking.md` as each s
 
 11. **Work through the submission checklist.** Open `submission/springer-checklist.md` and tick every item. Do not send the package until every item is verified.
 
-12. **Submit to Springer.** Zip all per-paper folders together with the `frontmatter` folder (`.zip`, not `.tar`, labelled with the volume number), prepare a separate **unzipped** directory containing only the PDFs of all 24 papers, and send the complete package to Springer along with the completed Production Word file and ToC/corresponding-author sheet. Allow **8–10 weeks** from receipt for publication.
+12. **Submit to Springer via the Manuscript Submission Portal.** Zip all `17411<4-digit-starting-page>` folders together with the `frontmatter` folder (`17411.zip`, not `.tar`), prepare the complete manuscript PDF (`proceedings.pdf`) and/or separate unzipped chapter PDFs, confirm third-party rights and content finality (no content changes after upload except minor proof corrections), and upload all files with the completed production questionnaire/ToC via the passwordless [Edition 696960 portal](https://bookmanuscriptsubmission.public.springernature.app/link/bookmanuscriptsubmission/696960-Bertrand.Meyer%40inf.ethz.ch). *(Note: the portal link is tied to `Bertrand.Meyer@inf.ethz.ch` — if submitting on his behalf, confirm authorization including the third-party rights declaration.)* Allow **8–10 weeks** from receipt for publication.
 
 ---
 
@@ -96,7 +96,8 @@ If a paper fails to compile, set its `Compilation Status` to `Error` in `trackin
 
 | Contact | Email | Role |
 |---------|-------|------|
-| Anna Kramer | anna.kramer@springer.com | Volume number requests; primary Springer contact for filing |
+| Sindhu Ramachandran | sindhu.ramachandran.consultant.1@springernature.com | Manuscript submission & production coordination (Volume 17411, Edition ID 696960) |
+| Anna Kramer | anna.kramer@springer.com | Volume number requests; primary Springer LNCS editorial contact |
 | Ronan Nugent | ronan.nugent@springer.com | Responsible editor; volume editor arrangement exceptions (if volume editors ≠ PC Chairs) |
 | LNCS Editorial | lncs@springer.com | Open Choice / Open Access queries |
 

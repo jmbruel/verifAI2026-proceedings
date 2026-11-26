@@ -197,11 +197,13 @@ def parse_checklist(path: Path) -> list[dict]:
     return groups
 
 
-def parse_volume_number(checklist_path: Path) -> str:
+def parse_volume_metadata(checklist_path: Path) -> tuple[str, str]:
     if not checklist_path.exists():
-        return ""
-    m = re.search(r"Assigned:\s*(LNCS\s+\d+)", checklist_path.read_text(encoding="utf-8"))
-    return m.group(1) if m else ""
+        return "", ""
+    text = checklist_path.read_text(encoding="utf-8")
+    vol_m = re.search(r"Assigned:\s*(LNCS\s+\d+)", text)
+    ed_m = re.search(r"Edition ID\s+(\d+)", text)
+    return (vol_m.group(1) if vol_m else ""), (ed_m.group(1) if ed_m else "")
 
 
 def get_pdf_pages(pdf_path: Path) -> int | None:
@@ -600,8 +602,11 @@ def build_html(payload: dict) -> str:
       const recPct = total ? Math.round((received / total) * 100) : 0;
       const volPct = Math.min(100, Math.round((volPages / 700) * 100));
 
+      const volBadge = DATA.volumeNumber
+        ? "Springer " + DATA.volumeNumber + (DATA.editionId ? " · Edition " + DATA.editionId : "")
+        : "Springer LNCS";
       document.getElementById("header-badges").innerHTML =
-        badge(DATA.volumeNumber ? "Springer " + DATA.volumeNumber : "Springer LNCS", "neutral") +
+        badge(volBadge, "neutral") +
         badge("Generated: " + DATA.generatedAt, "neutral") +
         (DATA.deadline ? badge("Author Deadline: " + DATA.deadline, "warning") : "");
 
@@ -982,12 +987,13 @@ def main() -> None:
     enrich_rules(papers)
 
     checklist = parse_checklist(ROOT / "submission" / "springer-checklist.md")
-    volume_number = parse_volume_number(ROOT / "submission" / "springer-checklist.md")
+    volume_number, edition_id = parse_volume_metadata(ROOT / "submission" / "springer-checklist.md")
     proceedings_pages = get_pdf_pages(ROOT / "proceedings.pdf")
 
     payload = {
         "generatedAt": dt.datetime.now().strftime("%Y-%m-%d %H:%M"),
         "volumeNumber": volume_number,
+        "editionId": edition_id,
         "deadline": deadline,
         "proceedingsPages": proceedings_pages,
         "papers": papers,

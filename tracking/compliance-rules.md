@@ -90,6 +90,17 @@ Required placement and formatting:
 
 ---
 
+## Additional Springer Portal & Publishing Rules (LNCS 17411 / Edition ID 696960)
+
+Beyond the five per-paper rules above (`CR-1`–`CR-5`), Springer's manuscript submission portal enforces three volume-level requirements before upload:
+
+- **Third-Party Rights Confirmation:** At upload, the submitter must declare whether all third-party rights/permissions (for reused figures, tables, or excerpts) have been obtained. Verify that any paper citing external figures/tables has proper permission or falls under authors' signed LTP Clause 5(a)(iv) warranties.
+- **Books Publishing Policies & Code of Conduct:** All submissions must adhere to Springer Nature's [Books Publishing Policies](https://www.springernature.com/gp/policies/book-publishing-policies) and [Code of Conduct for Book Authors](https://www.springernature.com/gp/authors/book-authors-code-of-conduct).
+- **Content Finality:** Once uploaded to the submission portal, the accepted manuscript is considered **final** — no further content, authorship, or corresponding-author changes are possible, except minor proof corrections.
+- **Proxy-Submission Authorization:** The submission portal (`Edition ID 696960`) is issued to `Bertrand.Meyer@inf.ethz.ch`. Anyone submitting on Bertrand Meyer's behalf must have explicit authorization to act for him, including making the third-party rights declaration.
+
+---
+
 ## Applying the Check
 
 Work through CR-1 to CR-5 in order for each paper. Use the checklist below:
