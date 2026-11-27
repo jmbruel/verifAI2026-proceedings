@@ -26,7 +26,7 @@ Pre-submission checklist for the VERIF-AI 2026 LNCS proceedings (**Volume 17411*
 ## Table of Contents & Author Index
 
 - [ ] **All fields complete in `submission/toc.csv` (and Springer Excel template)** — confirm every row has a non-empty Starting Page, Corresponding Author Name, Corresponding Author Email, and Submission Folder Number. Transfer to `springer-files/Table_of_Contents_template.xlsx` (or supply in an equivalent electronic format) for Springer.
-- [ ] **Topical Part Titles section headings added** — confirm that papers in `submission/toc.csv` (and `proceedings.tex`) have been grouped by topic (not by conference session, with no session numbering) and that meaningful Part Titles section headings have been entered.
+- [x] **Topical Part Titles section headings added** — confirm that papers in `submission/toc.csv` (and `proceedings.tex`) have been grouped into parts (no session numbering) and that meaningful Part Titles section headings have been entered. *(Split into **Full Papers** [19 papers, ≥ 12 pp] and **Short Papers** [5 papers, < 12 pp].)*
 - [ ] **Non-straightforward author names list prepared** — compile a list (`Given Name; Family Name`) for authors with complex surnames, particles, suffixes, or non-Western order (verify e.g. `Lefevre Louis` in Paper #6, Sub. ID `4854`), and confirm identical spelling across all papers for multi-paper authors.
 
 ---
